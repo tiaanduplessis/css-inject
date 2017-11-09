@@ -55,6 +55,8 @@
 
 ## Install
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/css-inject.svg)](https://greenkeeper.io/)
+
 ```sh
 $ npm install css-inject
 # OR
