@@ -1,14 +1,2 @@
-var head = document.head;
-var link = head.querySelector('[rel="stylesheet"]');
-
-function cssInject (rules) {
-  if ( rules === void 0 ) rules = '';
-
-  var css = document.createElement('style');
-  css.type = 'text/css';
-  css.appendChild(document.createTextNode(rules));
-  head.insertBefore(css, link);
-  return function () { return head.removeChild(css); }
-}
-
-export default cssInject;
+var e=document.head,t=e.querySelector('[rel="stylesheet"]');export default function(r){void 0===r&&(r="");var n=document.createElement("style");return n.type="text/css",n.appendChild(document.createTextNode(r)),e.insertBefore(n,t),function(){return e.removeChild(n)}};
+//# sourceMappingURL=css-inject.es.js.map
