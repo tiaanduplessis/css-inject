@@ -1,6 +1,6 @@
 {
   "name": "css-inject",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Inject CSS rules into the head above any other stylesheets",
   "license": "MIT",
   "repository": {
