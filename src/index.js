@@ -5,6 +5,12 @@ export default function cssInject (rules = '') {
   const css = document.createElement('style')
   css.type = 'text/css'
   css.appendChild(document.createTextNode(rules))
-  head.insertBefore(css, link)
+
+  if (link) {
+    head.insertBefore(css, link)
+  } else {
+    head.appendChild(css)
+  }
+
   return () => head.removeChild(css)
 }
