@@ -1,5 +1,6 @@
 const head = document.head
-const link = head.querySelector('[rel="stylesheet"]')
+const link =
+  head.querySelector('[rel="stylesheet"]') || head.querySelector('link')
 
 export default function cssInject (rules = '') {
   const css = document.createElement('style')
